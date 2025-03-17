@@ -1,37 +1,30 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matemática Fácil</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <h1>Matemática Fácil</h1>
-        <p>Explorando o mundo dos números e da lógica.</p>
-    </header>
+---
+layout: default
+title: Matemática Fácil
+---
 
-    <main>
-        <section class="intro">
-            <h2>Bem-vindo!</h2>
-            <p>Este site é dedicado a tornar a matemática acessível e divertida para todos.</p>
-        </section>
+<header>
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+</header>
 
-        <section class="topics">
-            <h2>Tópicos Populares</h2>
-            <ul>
-                <li>Álgebra</li>
-                <li>Geometria</li>
-                <li>Cálculo</li>
-                <li>Estatística</li>
-            </ul>
-        </section>
-    </main>
+<main>
+    <section class="intro">
+        <h2>Bem-vindo!</h2>
+        <p>Este site é dedicado a tornar a matemática acessível e divertida para todos.</p>
+    </section>
 
-    <footer>
-        <p>&copy; 2023 Matemática Fácil. Todos os direitos reservados.</p>
-    </footer>
-</body>
-</html>
+    <section class="topics">
+        <h2>Tópicos Populares</h2>
+        <ul>
+            <li>Álgebra</li>
+            <li>Geometria</li>
+            <li>Cálculo</li>
+            <li>Estatística</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 {{ site.title }}. Todos os direitos reservados.</p>
+</footer>
