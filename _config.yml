@@ -28,9 +28,10 @@ url: "https://josewilsonsouza.github.io" # the base hostname & protocol for your
 github_username: josewilsonsouza
 
 # Build settings
-theme: minima
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
