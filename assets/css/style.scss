@@ -1,0 +1,58 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Custom adjustments for Cayman theme */
+
+/* Ensure MathJax equations don't overflow */
+.MathJax_Display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 1em 0;
+}
+
+/* Improve code blocks */
+pre {
+  border-radius: 6px;
+  border: 1px solid #e1e4e8;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 3px solid #d1d5da;
+  padding-left: 1em;
+  color: #586069;
+  font-style: italic;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+table th {
+  background: #f6f8fa;
+  border: 1px solid #d1d5da;
+  padding: 0.6em;
+  font-weight: 600;
+}
+
+table td {
+  border: 1px solid #d1d5da;
+  padding: 0.6em;
+}
+
+/* Navigation links */
+.page-header a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  margin: 0 1em;
+}
+
+.page-header a:hover {
+  color: white;
+  text-decoration: underline;
+}
