@@ -5,7 +5,6 @@ permalink: /posts/
 ---
 
 <div class="posts-page">
-  <h1>Todos os Posts</h1>
   <p>Explore todos os artigos sobre matemática, teoria e aplicações práticas.</p>
 
   <!-- Filter by category -->
@@ -17,13 +16,11 @@ permalink: /posts/
         {% assign category_name = category[0] %}
         {% assign posts_count = category[1] | size %}
         <a href="#{{ category_name | slugify }}" class="tag" onclick="filterPosts('{{ category_name }}')">
-          {{ category_name }}
-          <span class="tag-count">{{ posts_count }}</span>
+          {{ category_name }} <span class="tag-count">({{ posts_count }})</span>
         </a>
       {% endfor %}
       <a href="#all" class="tag" onclick="showAll()">
-        Todos
-        <span class="tag-count">{{ site.posts | size }}</span>
+        Todos <span class="tag-count">({{ site.posts | size }})</span>
       </a>
     </div>
   </div>
@@ -47,10 +44,9 @@ permalink: /posts/
           </h3>
           {%- if post.excerpt -%}
             <div class="post-excerpt">
-              {{ post.excerpt | strip_html | truncatewords: 40 }}
+              {{ post.excerpt | strip_html | truncatewords: 30 }}
             </div>
           {%- endif -%}
-          <a href="{{ post.url | relative_url }}" class="read-more">Leia mais →</a>
         </li>
         {% endfor %}
       </ul>
@@ -64,7 +60,7 @@ function filterPosts(category) {
   const categorySlug = category.toLowerCase().replace(/\s+/g, '-');
 
   sections.forEach(section => {
-    if (section.id === `cat-${categorySlug}`) {
+    if (section.id === 'cat-' + categorySlug) {
       section.style.display = 'block';
     } else {
       section.style.display = 'none';
