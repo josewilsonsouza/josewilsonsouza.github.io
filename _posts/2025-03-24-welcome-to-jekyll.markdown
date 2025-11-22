@@ -1,29 +1,42 @@
 ---
 layout: post
-title:  "Bem Vindo(a)!"
+title:  "Bem-vindo ao Meu Site de Matemática!"
 date:   2025-03-24 09:59:19 -0300
-categories: jekyll update
+categories: geral anúncio
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+## Olá! Seja muito bem-vindo(a)!
 
-`YEAR-MONTH-DAY-title.MARKUP`
+É com grande satisfação que inauguro este espaço dedicado ao ensino e à divulgação da Matemática. Este site foi criado com o objetivo de compartilhar conhecimento, materiais didáticos e reflexões sobre o fascinante mundo dos números, formas e padrões.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+### O que você encontrará aqui?
 
-Jekyll also offers powerful support for code snippets:
+Neste blog, pretendo compartilhar regularmente:
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+- **Materiais didáticos**: Apostilas, listas de exercícios e resumos de conteúdos
+- **Posts educativos**: Explicações detalhadas sobre tópicos específicos de Matemática
+- **Dicas de estudo**: Estratégias e métodos para aprender Matemática de forma eficaz
+- **Curiosidades matemáticas**: Fatos interessantes e aplicações da Matemática no cotidiano
+- **Recursos para estudantes**: Links, ferramentas e recomendações de estudo
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+### Por que este site?
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Acredito que a Matemática, quando bem apresentada, deixa de ser um "bicho de sete cabeças" e revela sua beleza intrínseca. Meu objetivo é tornar o aprendizado matemático mais acessível, interessante e prazeroso para estudantes de todos os níveis.
+
+### Acompanhe as atualizações
+
+O site será atualizado regularmente com novos conteúdos. Fique à vontade para:
+
+- Explorar os posts já publicados
+- Entrar em contato caso tenha dúvidas ou sugestões
+- Compartilhar o conteúdo que achar útil
+
+### Vamos juntos nessa jornada!
+
+Espero que este espaço seja útil para seu aprendizado ou ensino de Matemática. Sinta-se à vontade para entrar em contato através do email **josewilson@matematica.ufrj.br** ou pelo telefone **(21) 98307-2973**.
+
+Bons estudos e até o próximo post!
+
+---
+
+*"A Matemática é a música da razão." - James Joseph Sylvester*
