@@ -3,28 +3,27 @@ layout: default
 title: Home
 ---
 
-<div class="hero">
-  <h1>Matemática Aplicada & Educação</h1>
-  <p>Explorando a beleza da matemática através de conceitos, teorias e aplicações práticas</p>
-</div>
-
 <div class="home">
+  <!-- Welcome Section -->
+  <div class="hero">
+    <h1>Matemática Aplicada & Educação</h1>
+    <p>Explorando conceitos matemáticos, teorias e aplicações práticas</p>
+  </div>
+
   <!-- Tags Section -->
   <div class="tags-container">
-    <h3>📚 Explore por Categoria</h3>
+    <h3>Explore por Categoria</h3>
     <div class="tag-cloud">
       {% assign sorted_categories = site.categories | sort %}
       {% for category in sorted_categories %}
         {% assign category_name = category[0] %}
         {% assign posts_count = category[1] | size %}
         <a href="#{{ category_name | slugify }}" class="tag" onclick="filterByCategory('{{ category_name }}')">
-          {{ category_name }}
-          <span class="tag-count">{{ posts_count }}</span>
+          {{ category_name }} <span class="tag-count">({{ posts_count }})</span>
         </a>
       {% endfor %}
       <a href="#all" class="tag" onclick="showAllPosts()">
-        Todos
-        <span class="tag-count">{{ site.posts | size }}</span>
+        Todos <span class="tag-count">({{ site.posts | size }})</span>
       </a>
     </div>
   </div>
@@ -43,7 +42,7 @@ title: Home
       </h3>
       {%- if post.excerpt -%}
         <div class="post-excerpt">
-          {{ post.excerpt | strip_html | truncatewords: 50 }}
+          {{ post.excerpt | strip_html | truncatewords: 40 }}
         </div>
       {%- endif -%}
       {%- if post.categories.size > 0 -%}
@@ -53,12 +52,9 @@ title: Home
         {%- endfor -%}
       </div>
       {%- endif -%}
-      <a href="{{ post.url | relative_url }}" class="read-more">Leia mais →</a>
     </li>
     {%- endfor -%}
   </ul>
-
-  <p class="rss-subscribe">Assine o <a href="{{ "/feed.xml" | relative_url }}">RSS feed</a></p>
 </div>
 
 <script>
@@ -75,8 +71,7 @@ function filterByCategory(category) {
     }
   });
 
-  // Update heading
-  document.querySelector('.post-list-heading').textContent = `Posts em: ${category}`;
+  document.querySelector('.post-list-heading').textContent = 'Posts em: ' + category;
 }
 
 function showAllPosts() {
@@ -85,7 +80,6 @@ function showAllPosts() {
     post.style.display = 'block';
   });
 
-  // Update heading
   document.querySelector('.post-list-heading').textContent = 'Posts Recentes';
 }
 </script>
