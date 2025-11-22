@@ -1,0 +1,343 @@
+/* Custom CSS for José Wilson's Math Site */
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --text-color: #2c3e50;
+  --bg-color: #ffffff;
+  --light-bg: #f8f9fa;
+  --border-color: #e1e4e8;
+  --code-bg: #f6f8fa;
+}
+
+/* Typography */
+body {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-color);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', Georgia, serif;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; border-bottom: 2px solid var(--border-color); padding-bottom: 0.3em; }
+h3 { font-size: 1.5em; }
+
+/* Navigation */
+.site-header {
+  border-top: 5px solid var(--secondary-color);
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-color);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.site-nav .page-link {
+  color: var(--text-color);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.site-nav .page-link:hover {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.site-title {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1.8em !important;
+  font-weight: 700;
+  color: var(--primary-color) !important;
+}
+
+.site-title:hover {
+  color: var(--secondary-color) !important;
+  text-decoration: none;
+}
+
+/* Tags */
+.tags-container {
+  margin: 2em 0;
+  padding: 1.5em;
+  background: var(--light-bg);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.tags-container h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-size: 1.3em;
+}
+
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 1em;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4em 1em;
+  background: var(--secondary-color);
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tag:hover {
+  background: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  color: white;
+  text-decoration: none;
+}
+
+.tag-count {
+  background: rgba(255,255,255,0.3);
+  padding: 0.1em 0.5em;
+  border-radius: 10px;
+  margin-left: 0.3em;
+  font-size: 0.85em;
+}
+
+/* Posts */
+.post-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.post-list > li {
+  margin-bottom: 2.5em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.post-list > li:last-child {
+  border-bottom: none;
+}
+
+.post-meta {
+  font-size: 0.9em;
+  color: #828282;
+  margin-bottom: 0.5em;
+}
+
+.post-link {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.post-link:hover {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.post-excerpt {
+  margin-top: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.post-categories {
+  margin-top: 0.8em;
+}
+
+.post-category {
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  background: var(--light-bg);
+  color: var(--secondary-color);
+  border-radius: 4px;
+  font-size: 0.85em;
+  margin-right: 0.5em;
+  border: 1px solid var(--border-color);
+}
+
+/* Math Equations */
+.MathJax {
+  font-size: 1.1em !important;
+}
+
+.MathJax_Display {
+  margin: 1.5em 0 !important;
+  padding: 1em;
+  background: var(--light-bg);
+  border-left: 4px solid var(--secondary-color);
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+/* Code blocks */
+pre, code {
+  font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+  background: var(--code-bg);
+  border: 1px solid var(--border-color);
+}
+
+pre {
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+  border-left: 4px solid var(--secondary-color);
+}
+
+code {
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--secondary-color);
+  padding-left: 1.5em;
+  color: #555;
+  font-style: italic;
+  background: var(--light-bg);
+  padding: 1em 1.5em;
+  border-radius: 4px;
+  margin: 1.5em 0;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5em 0;
+}
+
+table th {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.8em;
+  text-align: left;
+}
+
+table td {
+  padding: 0.8em;
+  border: 1px solid var(--border-color);
+}
+
+table tr:nth-child(even) {
+  background: var(--light-bg);
+}
+
+/* Links */
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Buttons */
+.button, .read-more {
+  display: inline-block;
+  padding: 0.6em 1.5em;
+  background: var(--secondary-color);
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover, .read-more:hover {
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+.site-footer {
+  background: var(--light-bg);
+  border-top: 1px solid var(--border-color);
+  margin-top: 3em;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.5em; }
+
+  .post-link {
+    font-size: 1.5em;
+  }
+
+  .tag-cloud {
+    justify-content: center;
+  }
+}
+
+/* Hero section for home page */
+.hero {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  padding: 3em 2em;
+  border-radius: 8px;
+  margin-bottom: 2em;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hero h1 {
+  color: white;
+  margin-top: 0;
+  font-size: 2.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 0;
+  opacity: 0.95;
+}
+
+/* Pagination */
+.pagination {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.pagination a, .pagination span {
+  padding: 0.5em 1em;
+  margin: 0 0.2em;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.pagination a:hover {
+  background: var(--secondary-color);
+  color: white;
+  text-decoration: none;
+}
+
+.pagination .current {
+  background: var(--secondary-color);
+  color: white;
+}
