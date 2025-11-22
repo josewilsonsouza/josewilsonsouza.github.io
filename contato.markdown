@@ -37,41 +37,34 @@ Para questões relacionadas a:
 
 ## Aulas Particulares
 
-### 📚 Informações sobre as Aulas
+### 📚 Sobre as Aulas
 
-Ofereço aulas particulares de Matemática para diferentes níveis:
+Como estudante de Matemática Aplicada na UFRJ, ofereço aulas particulares de Matemática para ajudar outros estudantes em sua jornada de aprendizado:
 
 - **Ensino Fundamental II** (6º ao 9º ano)
 - **Ensino Médio** (1º ao 3º ano)
 - **Pré-Vestibular e ENEM**
-- **Ensino Superior** (disciplinas de Cálculo, Álgebra Linear, Geometria Analítica)
+- **Ensino Superior** (Cálculo, Álgebra Linear, Geometria Analítica)
 - **Concursos Públicos** (matemática e raciocínio lógico)
 
-### ✨ Diferenciais
+### ✨ Metodologia
 
-- Metodologia personalizada de acordo com as necessidades do aluno
-- Flexibilidade de horários
+- Abordagem personalizada focada nas dificuldades de cada aluno
+- Explicações claras e exemplos práticos
+- Resolução de exercícios e listas
+- Preparação para provas e exames
 - Aulas online ou presenciais (Rio de Janeiro)
-- Material didático complementar
-- Acompanhamento contínuo do progresso
 
-### 💰 Valores e Disponibilidade
+### 💰 Informações
 
 Entre em contato para consultar:
 - Disponibilidade de horários
 - Valores das aulas
-- Pacotes de aulas
 - Formas de pagamento
 
 ---
 
-## Horário de Atendimento
-
-**Segunda a Sexta:** 9h às 20h
-**Sábado:** 9h às 14h
-**Domingo:** Apenas emergências
-
-*Respondo emails e mensagens em até 24 horas úteis.*
+*Respondo emails e mensagens em até 24 horas.*
 
 ---
 

@@ -6,33 +6,34 @@ permalink: /about/
 
 ## Sobre Mim
 
-Olá! Sou **José Wilson de Souza**, professor de Matemática na Universidade Federal do Rio de Janeiro (UFRJ).
+Olá! Sou **José Wilson de Souza**, estudante de **Matemática Aplicada** na Universidade Federal do Rio de Janeiro (UFRJ).
 
-### Formação
+### Formação Acadêmica
 
-Minha trajetória acadêmica é marcada pela paixão pelo ensino e pela pesquisa em Matemática. Dedico-me a tornar conceitos matemáticos complexos mais acessíveis e compreensíveis para estudantes de diversos níveis.
+Atualmente curso Matemática Aplicada na UFRJ, uma área que combina teoria matemática rigorosa com aplicações práticas em ciência, engenharia e tecnologia. Minha jornada acadêmica é marcada pela paixão pelo aprendizado e pelo compartilhamento de conhecimento matemático.
 
-### Atuação Profissional
+### Experiência
 
-- **Professor na UFRJ**: Leciono disciplinas de Matemática para graduação
+- **Estudante de Matemática Aplicada na UFRJ**: Foco em modelagem matemática, análise numérica e métodos computacionais
 - **Aulas Particulares**: Ofereço aulas personalizadas de Matemática para diversos níveis de ensino
-- **Pesquisa**: Interesse em métodos pedagógicos inovadores para o ensino de Matemática
+- **Interesse em Pesquisa**: Aplicações da Matemática em problemas reais
 
 ### Áreas de Interesse
 
-- Álgebra
-- Geometria
-- Cálculo
-- Didática da Matemática
-- Educação Matemática
+- Matemática Aplicada
+- Álgebra Linear
+- Cálculo e Análise
+- Métodos Numéricos
+- Programação e Computação Científica
+- Modelagem Matemática
 
 ### Objetivo deste Site
 
 Este espaço foi criado para compartilhar:
-- Materiais didáticos
-- Anotações de aulas
+- Anotações de estudos e materiais de apoio
 - Posts sobre tópicos matemáticos interessantes
 - Recursos educacionais para estudantes
+- Experiências e aprendizados da graduação
 
 ### Contato
 
