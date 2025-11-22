@@ -21,8 +21,8 @@
 title: José Wilson de Souza
 email: josewilson@matematica.ufrj.br
 description: >- # this means to ignore newlines until "baseurl:"
-  Professor de Matemática da UFRJ. Aqui você encontrará materiais didáticos,
-  posts sobre matemática, anotações de aulas e recursos educacionais.
+  Estudante de Matemática Aplicada na UFRJ. Aqui você encontrará posts sobre
+  matemática, anotações de estudos e recursos educacionais.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://josewilsonsouza.github.io" # the base hostname & protocol for your site
 github_username: josewilsonsouza
