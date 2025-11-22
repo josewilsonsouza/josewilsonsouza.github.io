@@ -15,11 +15,11 @@ Em um triângulo retângulo, o quadrado da hipotenusa é igual à soma dos quadr
 
 Matematicamente:
 
-**a² + b² = c²**
+$$a^2 + b^2 = c^2$$
 
 onde:
-- **a** e **b** são os catetos (lados que formam o ângulo reto)
-- **c** é a hipotenusa (lado oposto ao ângulo reto)
+- $a$ e $b$ são os catetos (lados que formam o ângulo reto)
+- $c$ é a hipotenusa (lado oposto ao ângulo reto)
 
 ### História
 
@@ -27,12 +27,12 @@ Embora o teorema leve o nome de Pitágoras (c. 570 - 495 a.C.), há evidências 
 
 ### Demonstração Geométrica (Uma das mais belas!)
 
-Considere um quadrado de lado (a + b). Podemos dividi-lo de duas formas diferentes:
+Considere um quadrado de lado $(a + b)$. Podemos dividi-lo de duas formas diferentes:
 
-1. **Primeira forma:** Quatro triângulos retângulos + um quadrado interno de lado c
-2. **Segunda forma:** Dois quadrados (a² e b²) + dois retângulos
+1. **Primeira forma:** Quatro triângulos retângulos + um quadrado interno de lado $c$
+2. **Segunda forma:** Dois quadrados ($a^2$ e $b^2$) + dois retângulos
 
-Como a área total é a mesma nas duas configurações, chegamos à relação a² + b² = c².
+Como a área total é a mesma nas duas configurações, chegamos à relação $a^2 + b^2 = c^2$.
 
 ### Aplicações Práticas
 
@@ -56,47 +56,49 @@ Sistemas de posicionamento global utilizam variações do teorema.
 **Exemplo 1:** Uma escada de 5 metros está apoiada em uma parede. Se a base da escada está a 3 metros da parede, qual a altura que ela alcança?
 
 **Solução:**
-- Hipotenusa (c) = 5 m
-- Um cateto (a) = 3 m
-- Outro cateto (b) = ?
+- Hipotenusa: $c = 5$ m
+- Um cateto: $a = 3$ m
+- Outro cateto: $b = ?$
 
 Aplicando o teorema:
-```
-3² + b² = 5²
-9 + b² = 25
-b² = 16
-b = 4 metros
-```
+
+$$\begin{align}
+3^2 + b^2 &= 5^2 \\
+9 + b^2 &= 25 \\
+b^2 &= 16 \\
+b &= 4 \text{ metros}
+\end{align}$$
 
 **Exemplo 2:** Qual é a diagonal de um retângulo de lados 6 cm e 8 cm?
 
 **Solução:**
-```
-d² = 6² + 8²
-d² = 36 + 64
-d² = 100
-d = 10 cm
-```
+
+$$\begin{align}
+d^2 &= 6^2 + 8^2 \\
+d^2 &= 36 + 64 \\
+d^2 &= 100 \\
+d &= 10 \text{ cm}
+\end{align}$$
 
 ### Ternas Pitagóricas
 
 Conjuntos de três números inteiros que satisfazem o teorema são chamados de **ternas pitagóricas**. Exemplos:
 
-- (3, 4, 5)
-- (5, 12, 13)
-- (8, 15, 17)
-- (7, 24, 25)
+- $(3, 4, 5)$
+- $(5, 12, 13)$
+- $(8, 15, 17)$
+- $(7, 24, 25)$
 
-**Curiosidade:** Se (a, b, c) é uma terna pitagórica, então (ka, kb, kc) também é, para qualquer k inteiro!
+**Curiosidade:** Se $(a, b, c)$ é uma terna pitagórica, então $(ka, kb, kc)$ também é, para qualquer $k \in \mathbb{Z}$!
 
 ### Extensões do Teorema
 
 #### Lei dos Cossenos
 O Teorema de Pitágoras é um caso particular da Lei dos Cossenos:
 
-**c² = a² + b² - 2ab·cos(C)**
+$$c^2 = a^2 + b^2 - 2ab\cos(C)$$
 
-Quando C = 90°, cos(C) = 0, e obtemos o Teorema de Pitágoras!
+Quando $C = 90°$, temos $\cos(C) = 0$, e obtemos o Teorema de Pitágoras!
 
 ### Para Pensar
 

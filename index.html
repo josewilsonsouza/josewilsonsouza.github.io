@@ -1,0 +1,91 @@
+---
+layout: default
+title: Home
+---
+
+<div class="hero">
+  <h1>Matemática Aplicada & Educação</h1>
+  <p>Explorando a beleza da matemática através de conceitos, teorias e aplicações práticas</p>
+</div>
+
+<div class="home">
+  <!-- Tags Section -->
+  <div class="tags-container">
+    <h3>📚 Explore por Categoria</h3>
+    <div class="tag-cloud">
+      {% assign sorted_categories = site.categories | sort %}
+      {% for category in sorted_categories %}
+        {% assign category_name = category[0] %}
+        {% assign posts_count = category[1] | size %}
+        <a href="#{{ category_name | slugify }}" class="tag" onclick="filterByCategory('{{ category_name }}')">
+          {{ category_name }}
+          <span class="tag-count">{{ posts_count }}</span>
+        </a>
+      {% endfor %}
+      <a href="#all" class="tag" onclick="showAllPosts()">
+        Todos
+        <span class="tag-count">{{ site.posts | size }}</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Posts Section -->
+  <h2 class="post-list-heading">Posts Recentes</h2>
+  <ul class="post-list" id="post-list">
+    {%- assign date_format = site.minima.date_format | default: "%d %b %Y" -%}
+    {%- for post in site.posts -%}
+    <li data-categories="{{ post.categories | join: ',' | downcase }}">
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+      {%- if post.excerpt -%}
+        <div class="post-excerpt">
+          {{ post.excerpt | strip_html | truncatewords: 50 }}
+        </div>
+      {%- endif -%}
+      {%- if post.categories.size > 0 -%}
+      <div class="post-categories">
+        {%- for category in post.categories -%}
+          <span class="post-category">{{ category }}</span>
+        {%- endfor -%}
+      </div>
+      {%- endif -%}
+      <a href="{{ post.url | relative_url }}" class="read-more">Leia mais →</a>
+    </li>
+    {%- endfor -%}
+  </ul>
+
+  <p class="rss-subscribe">Assine o <a href="{{ "/feed.xml" | relative_url }}">RSS feed</a></p>
+</div>
+
+<script>
+function filterByCategory(category) {
+  const posts = document.querySelectorAll('#post-list li');
+  const categoryLower = category.toLowerCase();
+
+  posts.forEach(post => {
+    const categories = post.getAttribute('data-categories');
+    if (categories.includes(categoryLower)) {
+      post.style.display = 'block';
+    } else {
+      post.style.display = 'none';
+    }
+  });
+
+  // Update heading
+  document.querySelector('.post-list-heading').textContent = `Posts em: ${category}`;
+}
+
+function showAllPosts() {
+  const posts = document.querySelectorAll('#post-list li');
+  posts.forEach(post => {
+    post.style.display = 'block';
+  });
+
+  // Update heading
+  document.querySelector('.post-list-heading').textContent = 'Posts Recentes';
+}
+</script>
