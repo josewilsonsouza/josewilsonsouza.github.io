@@ -1,4 +1,37 @@
 ---
-layout: home
-title: Home
+layout: default
 ---
+
+{% include mathjax.html %}
+
+<div class="profile">
+  <h1>{{ site.title }}</h1>
+  <p class="subtitle">{{ site.description }}</p>
+
+  <div class="bio">
+    <p>Estudante de Matemática Aplicada na UFRJ, explorando teoria matemática e suas aplicações práticas em ciência e tecnologia.</p>
+
+    <p>Neste espaço, compartilho anotações de estudos, posts sobre conceitos matemáticos e recursos educacionais.</p>
+  </div>
+</div>
+
+<h2 class="page-heading">Posts</h2>
+
+<ul class="post-list">
+  {%- assign date_format = "%b %-d, %Y" -%}
+  {%- for post in site.posts -%}
+  <li>
+    <span class="post-meta">{{ post.date | date: date_format }}</span>
+    <h3>
+      <a class="post-link" href="{{ post.url | relative_url }}">
+        {{ post.title | escape }}
+      </a>
+    </h3>
+    {%- if post.excerpt -%}
+      <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    {%- endif -%}
+  </li>
+  {%- endfor -%}
+</ul>
+
+<p class="rss-subscribe">Assine via <a href="{{ "/feed.xml" | relative_url }}">RSS</a></p>
