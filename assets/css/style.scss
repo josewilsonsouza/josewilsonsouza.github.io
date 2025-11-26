@@ -11,6 +11,8 @@
   --text-gray: #64748b;
   --bg-light: #f8fafc;
   --bg-white: #ffffff;
+  --border-gray: #e2e8f0; /* Adicionado para o toggle */
+  --toggle-bg: #ffffff; /* Adicionado para o toggle */
   --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --hover-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
@@ -21,6 +23,8 @@
   --text-gray: #94a3b8;
   --bg-light: #0f172a;
   --bg-white: #1e293b;
+  --border-gray: #334155; /* Adicionado para dark mode */
+  --toggle-bg: #1e293b; /* Adicionado para dark mode */
   --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
 }
 
