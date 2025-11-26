@@ -5,33 +5,32 @@
 </button>
 
 <script>
-// Aplicar tema antes do carregamento para evitar flash
 (function() {
+  // 1. Recupera o tema salvo ou usa 'light'
   const currentTheme = localStorage.getItem('theme') || 'light';
+
+  // 2. Aplica imediatamente na tag <html> para evitar "flash" branco
   document.documentElement.setAttribute('data-theme', currentTheme);
-})();
 
-// Configurar toggle após DOM carregar
-document.addEventListener('DOMContentLoaded', function() {
-  const toggle = document.getElementById('dark-mode-toggle');
-  const html = document.documentElement;
+  // 3. Espera o botão carregar para adicionar o evento de clique
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.getElementById('dark-mode-toggle');
 
-  if (!toggle) {
-    console.error('Dark mode toggle button not found');
-    return;
-  }
+    if (toggle) {
+      toggle.addEventListener('click', function() {
+        const html = document.documentElement;
+        let theme = html.getAttribute('data-theme');
 
-  // Toggle theme on click
-  toggle.addEventListener('click', function() {
-    const currentTheme = html.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        // Troca o tema
+        theme = (theme === 'light') ? 'dark' : 'light';
 
-    html.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-
-    console.log('Theme changed to:', newTheme);
+        // Aplica e Salva
+        html.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+      });
+    }
   });
-});
+})();
 </script>
 
 <style>
@@ -62,11 +61,11 @@ document.addEventListener('DOMContentLoaded', function() {
   transition: opacity 0.3s ease;
 }
 
-[data-theme="light"] .dark-mode-toggle .moon {
+html[data-theme="light"] .dark-mode-toggle .moon {
   display: none;
 }
 
-[data-theme="dark"] .dark-mode-toggle .sun {
+html[data-theme="dark"] .dark-mode-toggle .sun {
   display: none;
 }
 </style>
