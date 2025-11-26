@@ -4,34 +4,69 @@ layout: default
 
 {% include mathjax.html %}
 
-<div class="profile">
-  <h1>{{ site.title }}</h1>
-  <p class="subtitle">{{ site.description }}</p>
-
-  <div class="bio">
-    <p>Estudante de Matemática Aplicada na UFRJ, explorando teoria matemática e suas aplicações práticas em ciência e tecnologia.</p>
-
-    <p>Neste espaço, compartilho anotações de estudos, posts sobre conceitos matemáticos e recursos educacionais.</p>
-  </div>
+<div class="hero">
+  <h1>José Wilson de Souza</h1>
+  <p class="tagline">Resolvo problemas usando matemática e código</p>
+  <p class="description">
+    Profissional multidisciplinar com experiência em Inteligência Artificial, Matemática Aplicada e Educação.
+    Atuo na interseção entre tecnologia, ciência de dados e modelagem matemática para criar soluções inovadoras.
+  </p>
 </div>
 
-<h2 class="page-heading">Posts</h2>
+<section class="services">
+  <h2>Áreas de Atuação</h2>
 
-<ul class="post-list">
-  {%- assign date_format = "%b %-d, %Y" -%}
-  {%- for post in site.posts -%}
-  <li>
-    <span class="post-meta">{{ post.date | date: date_format }}</span>
-    <h3>
-      <a class="post-link" href="{{ post.url | relative_url }}">
-        {{ post.title | escape }}
-      </a>
-    </h3>
-    {%- if post.excerpt -%}
-      <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-    {%- endif -%}
-  </li>
-  {%- endfor -%}
-</ul>
+  <div class="services-grid">
+    <!-- Desenvolvimento & IA -->
+    <div class="service-card">
+      <span class="service-icon">💻</span>
+      <h3>Desenvolvimento & IA</h3>
+      <p>
+        Desenvolvimento de soluções em Python, Data Science e Automação.
+        Especialista em Redes Neurais, Aprendizado Federado e criação de aplicações com Streamlit.
+        Autor da biblioteca <strong>Fleven</strong>.
+      </p>
+    </div>
 
-<p class="rss-subscribe">Assine via <a href="{{ "/feed.xml" | relative_url }}">RSS</a></p>
+    <!-- Consultoria Matemática -->
+    <div class="service-card">
+      <span class="service-icon">📊</span>
+      <h3>Consultoria Matemática</h3>
+      <p>
+        Modelagem matemática, Métodos Numéricos e Otimização.
+        Aplicação de técnicas estatísticas e computacionais para resolver problemas complexos em negócios e pesquisa.
+      </p>
+    </div>
+
+    <!-- Educação Personalizada -->
+    <div class="service-card">
+      <span class="service-icon">📚</span>
+      <h3>Educação Personalizada</h3>
+      <p>
+        Aulas particulares, Mentoria técnica e Treinamento corporativo.
+        Criador do projeto <strong>Matematicaverso</strong>, focado em tornar matemática acessível e aplicável.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="recent-posts">
+  <h2 class="page-heading">Artigos Recentes</h2>
+
+  <ul class="post-list">
+    {%- assign date_format = "%b %-d, %Y" -%}
+    {%- for post in site.posts limit:5 -%}
+    <li>
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+      {%- if post.excerpt -%}
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
