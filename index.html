@@ -6,7 +6,7 @@
   <title>José Wilson Souza — Tecnologia · Matemática · Educação</title>
 
   <!-- Font Awesome (ícones sociais) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous"/>
 
   <!-- CSS gerado a partir do SCSS -->
   <link rel="stylesheet" href="/assets/css/style.css" />
@@ -20,13 +20,11 @@
       </a>
 
       <div class="header-actions">
-        <!-- Busca simples (filtra posts) -->
         <div class="search-wrapper" title="Buscar posts">
           <input id="search-input" class="search-input" type="search" placeholder="Buscar posts..." aria-label="Buscar posts" />
           <button id="search-clear" class="search-clear" aria-label="Limpar busca" title="Limpar busca">✕</button>
         </div>
 
-        <!-- Theme toggle -->
         <button id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Alternar modo escuro">
           <i class="fa-solid fa-sun icon-sun"></i>
           <i class="fa-solid fa-moon icon-moon"></i>
@@ -36,14 +34,14 @@
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- Hero Section (compacta e centralizada) -->
     <section id="hero" class="hero">
-      <div class="container hero-inner">
+      <div class="container">
         <div class="hero-card">
           <img class="hero-avatar" src="/assets/images/profile.jpg" alt="Foto de José Wilson Souza">
           <div class="hero-content">
             <h1 class="hero-title">Resolvo problemas usando matemática e código</h1>
-            <p class="hero-subtitle">Profissional multidisciplinar em Tecnologia (Data Science / IA), Matemática Aplicada e Educação — pesquisa, modelagem e soluções aplicáveis.</p>
+            <p class="hero-subtitle">Pesquisa e desenvolvimento em IA (INMETRO), modelagem matemática e educação aplicada — soluções práticas com Python e ferramentas interativas.</p>
             <div class="hero-ctas">
               <a class="btn btn-primary" href="#portfolio">Ver Portfólio</a>
               <a class="btn btn-outline" href="#contato">Entre em Contato</a>
@@ -62,48 +60,43 @@
         <div class="cards-grid" role="list">
           <article class="card" role="listitem" aria-labelledby="card-tech-title">
             <div class="card-icon" aria-hidden="true">
-              <!-- ícone terminal -->
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path><path d="M21 18H3"></path></svg>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path><path d="M21 18H3"></path></svg>
             </div>
             <h3 id="card-tech-title">Tecnologia & Dados</h3>
-            <p>Python, Data Science, IA, automação e desenvolvimento de protótipos (Streamlit, APIs e pipelines reprodutíveis).</p>
+            <p>Python, ciência de dados, IA e automação — protótipos e soluções reprodutíveis.</p>
           </article>
 
           <article class="card" role="listitem" aria-labelledby="card-math-title">
             <div class="card-icon" aria-hidden="true">
-              <!-- ícone gráfico -->
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="M7 14v-8"></path><path d="M12 14v-4"></path><path d="M17 14v-10"></path></svg>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="M7 14v-8"></path><path d="M12 14v-4"></path><path d="M17 14v-10"></path></svg>
             </div>
             <h3 id="card-math-title">Consultoria Matemática</h3>
-            <p>Modelagem, métodos numéricos, estatística e otimização para tornar decisões e produtos mais robustos.</p>
+            <p>Modelagem, métodos numéricos e otimização para decisões robustas e escaláveis.</p>
           </article>
 
           <article class="card" role="listitem" aria-labelledby="card-edu-title">
             <div class="card-icon" aria-hidden="true">
-              <!-- ícone livro -->
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M20 2H8a2 2 0 0 0-2 2v13"></path><path d="M8 6h12"></path></svg>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M20 2H8a2 2 0 0 0-2 2v13"></path><path d="M8 6h12"></path></svg>
             </div>
             <h3 id="card-edu-title">Mentoria & Educação</h3>
-            <p>Aulas, mentorias e workshops práticos em matemática aplicada, programação científica e data science.</p>
+            <p>Aulas, mentorias e workshops práticos em matemática aplicada e programação científica.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Exemplo de seção de posts (o search JS filtra .post-card) -->
+    <!-- Exemplo de posts (busca filtra .post-card) -->
     <section id="posts" class="posts container">
       <h2 class="section-title">Últimos posts</h2>
       <div class="posts-grid" id="posts-grid">
-        <!-- Exemplo de cards de post — ajuste conforme seu template / Jekyll -->
         <article class="post-card" data-title="Introdução ao Aprendizado Federado">
           <h3 class="post-title">Introdução ao Aprendizado Federado</h3>
-          <p class="post-excerpt">Resumo e considerações sobre privacidade e comunicação.</p>
+          <p class="post-excerpt">Resumo sobre privacidade e comunicação.</p>
         </article>
         <article class="post-card" data-title="Modelagem numérica em física">
           <h3 class="post-title">Modelagem numérica em física</h3>
-          <p class="post-excerpt">Abordagens práticas com Python e métodos reduzidos.</p>
+          <p class="post-excerpt">Abordagens práticas com Python.</p>
         </article>
-        <!-- O seu gerador de site pode preencher dinamicamente -->
       </div>
     </section>
   </main>
@@ -121,7 +114,6 @@
     </div>
   </footer>
 
-  <!-- JS -->
   <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
