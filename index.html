@@ -1,76 +1,83 @@
-<!doctype html>
-<html lang="pt-BR" data-theme="light">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>José Wilson Souza — Tecnologia · Matemática · Educação</title>
+---
+layout: default
+---
 
-  <!-- Font Awesome (ícones sociais) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous"/>
+<section class="hero-section">
+  <div class="hero-content">
+    <span class="hero-label">Pesquisador & Educador</span>
+    <h1 class="hero-title">José Wilson de Souza</h1>
+    <p class="hero-description">
+      Transformo problemas complexos em soluções através da <strong>Matemática Aplicada</strong>, 
+      <strong>Inteligência Artificial</strong> e <strong>Educação</strong>.
+    </p>
+    
+    <div class="hero-buttons">
+      <a href="/contato/" class="btn btn-primary">Solicitar Consultoria</a>
+      <a href="/about/" class="btn btn-outline">Conhecer Trajetória</a>
+    </div>
 
-<div class="hero">
-  <h1>José Wilson de Souza</h1>
-  <p class="tagline">Resolvo problemas usando matemática e código</p>
-  <p class="description">
-    Profissional multidisciplinar com experiência em Inteligência Artificial, Matemática Aplicada e Educação.
-    Atuo na interseção entre tecnologia, ciência de dados e modelagem matemática para criar soluções inovadoras.
-  </p>
-</div>
+    <div class="hero-socials">
+      <a href="https://github.com/josewilsonsouza" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:josewilson@matematica.ufrj.br" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a> 
+    </div>
+  </div>
 
-<section class="services">
-  <h2>Áreas de Atuação</h2>
+  <div class="hero-image-container">
+    <div class="hero-avatar">
+      <span class="avatar-placeholder">JW</span>
+      </div>
+  </div>
+</section>
+
+<section class="section-container">
+  <div class="section-header">
+    <h2 class="section-title">Áreas de Atuação</h2>
+    <p class="section-subtitle">Soluções técnicas e educacionais de alto nível</p>
+  </div>
 
   <div class="services-grid">
-    <!-- Desenvolvimento & IA -->
     <div class="service-card">
-      <span class="service-icon">💻</span>
-      <h3>Desenvolvimento & IA</h3>
-      <p>
-        Desenvolvimento de soluções em Python, Data Science e Automação.
-        Especialista em Redes Neurais, Aprendizado Federado e criação de aplicações com Streamlit.
-        Autor da biblioteca <strong>Fleven</strong>.
-      </p>
+      <div class="icon-box"><i class="fas fa-brain"></i></div>
+      <h3>IA & Machine Learning</h3>
+      <p>Desenvolvimento de Redes Neurais, Aprendizado Federado e pipelines de dados em Python.</p>
     </div>
 
-    <!-- Consultoria Matemática -->
     <div class="service-card">
-      <span class="service-icon">📊</span>
-      <h3>Consultoria Matemática</h3>
-      <p>
-        Modelagem matemática, Métodos Numéricos e Otimização.
-        Aplicação de técnicas estatísticas e computacionais para resolver problemas complexos em negócios e pesquisa.
-      </p>
+      <div class="icon-box"><i class="fas fa-square-root-variable"></i></div>
+      <h3>Modelagem Matemática</h3>
+      <p>Otimização, Métodos Numéricos e Estatística Aplicada para resolver problemas de negócios.</p>
     </div>
 
-    <!-- Educação Personalizada -->
     <div class="service-card">
-      <span class="service-icon">📚</span>
-      <h3>Educação Personalizada</h3>
-      <p>
-        Aulas particulares, Mentoria técnica e Treinamento corporativo.
-        Criador do projeto <strong>Matematicaverso</strong>, focado em tornar matemática acessível e aplicável.
-      </p>
+      <div class="icon-box"><i class="fas fa-chalkboard-user"></i></div>
+      <h3>Educação & Treinamento</h3>
+      <p>Aulas particulares, mentorias técnicas e preparação para concursos e mestrados.</p>
     </div>
   </div>
 </section>
 
-<section class="recent-posts">
-  <h2 class="page-heading">Artigos Recentes</h2>
+<section class="section-container bg-light">
+  <div class="section-header">
+    <h2 class="section-title">Artigos Recentes</h2>
+    <a href="/blog/" class="view-all">Ver todos <i class="fas fa-arrow-right"></i></a>
+  </div>
 
-  <ul class="post-list">
-    {%- assign date_format = "%b %-d, %Y" -%}
-    {%- for post in site.posts limit:5 -%}
-    <li>
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
-      <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a>
-      </h3>
-      {%- if post.excerpt -%}
-        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
-      {%- endif -%}
-    </li>
-    {%- endfor -%}
-  </ul>
+  <div class="posts-grid">
+    {% for post in site.posts limit:3 %}
+    <article class="post-card">
+      <div class="post-content">
+        <div class="post-meta">
+          <span class="post-date">{{ post.date | date: "%d/%m/%Y" }}</span>
+          {% if post.categories.size > 0 %}
+          <span class="post-cat">• {{ post.categories[0] }}</span>
+          {% endif %}
+        </div>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
+        <a href="{{ post.url | relative_url }}" class="read-more">Ler artigo</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
 </section>
