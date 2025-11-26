@@ -1,0 +1,60 @@
+<!-- Dark Mode Toggle -->
+<button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+  <span class="sun">☀️</span>
+  <span class="moon">🌙</span>
+</button>
+
+<script>
+(function() {
+  const toggle = document.getElementById('dark-mode-toggle');
+  const html = document.documentElement;
+
+  // Check for saved preference or default to light mode
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  html.setAttribute('data-theme', currentTheme);
+
+  // Toggle theme
+  toggle.addEventListener('click', function() {
+    const theme = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  });
+})();
+</script>
+
+<style>
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--toggle-bg);
+  border: 2px solid var(--border-gray);
+  border-radius: 50px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.dark-mode-toggle .sun,
+.dark-mode-toggle .moon {
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+
+[data-theme="light"] .dark-mode-toggle .moon {
+  display: none;
+}
+
+[data-theme="dark"] .dark-mode-toggle .sun {
+  display: none;
+}
+</style>

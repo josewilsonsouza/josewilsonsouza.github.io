@@ -8,112 +8,69 @@
   <!-- Font Awesome (ícones sociais) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous"/>
 
-  <!-- CSS gerado a partir do SCSS -->
-  <link rel="stylesheet" href="/assets/css/style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="/">
-        <img src="/assets/images/profile.jpg" alt="Foto de José Wilson Souza" class="brand-img" />
-        <span class="brand-name">José Wilson Souza</span>
-      </a>
+<div class="hero">
+  <h1>José Wilson de Souza</h1>
+  <p class="tagline">Resolvo problemas usando matemática e código</p>
+  <p class="description">
+    Profissional multidisciplinar com experiência em Inteligência Artificial, Matemática Aplicada e Educação.
+    Atuo na interseção entre tecnologia, ciência de dados e modelagem matemática para criar soluções inovadoras.
+  </p>
+</div>
 
-      <div class="header-actions">
-        <div class="search-wrapper" title="Buscar posts">
-          <input id="search-input" class="search-input" type="search" placeholder="Buscar posts..." aria-label="Buscar posts" />
-          <button id="search-clear" class="search-clear" aria-label="Limpar busca" title="Limpar busca">✕</button>
-        </div>
+<section class="services">
+  <h2>Áreas de Atuação</h2>
 
-        <button id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Alternar modo escuro">
-          <i class="fa-solid fa-sun icon-sun"></i>
-          <i class="fa-solid fa-moon icon-moon"></i>
-        </button>
-      </div>
+  <div class="services-grid">
+    <!-- Desenvolvimento & IA -->
+    <div class="service-card">
+      <span class="service-icon">💻</span>
+      <h3>Desenvolvimento & IA</h3>
+      <p>
+        Desenvolvimento de soluções em Python, Data Science e Automação.
+        Especialista em Redes Neurais, Aprendizado Federado e criação de aplicações com Streamlit.
+        Autor da biblioteca <strong>Fleven</strong>.
+      </p>
     </div>
-  </header>
 
-  <main>
-    <!-- Hero Section (compacta e centralizada) -->
-    <section id="hero" class="hero">
-      <div class="container">
-        <div class="hero-card">
-          <img class="hero-avatar" src="/assets/images/profile.jpg" alt="Foto de José Wilson Souza">
-          <div class="hero-content">
-            <h1 class="hero-title">Resolvo problemas usando matemática e código</h1>
-            <p class="hero-subtitle">Pesquisa e desenvolvimento em IA (INMETRO), modelagem matemática e educação aplicada — soluções práticas com Python e ferramentas interativas.</p>
-            <div class="hero-ctas">
-              <a class="btn btn-primary" href="#portfolio">Ver Portfólio</a>
-              <a class="btn btn-outline" href="#contato">Entre em Contato</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Áreas de Atuação (cards) -->
-    <section id="areas-atuacao" class="areas-atuacao">
-      <div class="container">
-        <h2 class="section-title">Áreas de Atuação</h2>
-        <p class="section-sub">Soluções técnicas e educacionais com foco em impacto prático.</p>
-
-        <div class="cards-grid" role="list">
-          <article class="card" role="listitem" aria-labelledby="card-tech-title">
-            <div class="card-icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path><path d="M21 18H3"></path></svg>
-            </div>
-            <h3 id="card-tech-title">Tecnologia & Dados</h3>
-            <p>Python, ciência de dados, IA e automação — protótipos e soluções reprodutíveis.</p>
-          </article>
-
-          <article class="card" role="listitem" aria-labelledby="card-math-title">
-            <div class="card-icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="M7 14v-8"></path><path d="M12 14v-4"></path><path d="M17 14v-10"></path></svg>
-            </div>
-            <h3 id="card-math-title">Consultoria Matemática</h3>
-            <p>Modelagem, métodos numéricos e otimização para decisões robustas e escaláveis.</p>
-          </article>
-
-          <article class="card" role="listitem" aria-labelledby="card-edu-title">
-            <div class="card-icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M20 2H8a2 2 0 0 0-2 2v13"></path><path d="M8 6h12"></path></svg>
-            </div>
-            <h3 id="card-edu-title">Mentoria & Educação</h3>
-            <p>Aulas, mentorias e workshops práticos em matemática aplicada e programação científica.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Exemplo de posts (busca filtra .post-card) -->
-    <section id="posts" class="posts container">
-      <h2 class="section-title">Últimos posts</h2>
-      <div class="posts-grid" id="posts-grid">
-        <article class="post-card" data-title="Introdução ao Aprendizado Federado">
-          <h3 class="post-title">Introdução ao Aprendizado Federado</h3>
-          <p class="post-excerpt">Resumo sobre privacidade e comunicação.</p>
-        </article>
-        <article class="post-card" data-title="Modelagem numérica em física">
-          <h3 class="post-title">Modelagem numérica em física</h3>
-          <p class="post-excerpt">Abordagens práticas com Python.</p>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <p>© <span id="year"></span> José Wilson Souza</p>
-      </div>
-      <div class="footer-right">
-        <a href="https://github.com/josewilsonsouza" aria-label="GitHub" class="social-link"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/yourprofile" aria-label="LinkedIn" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="mailto:seu@email" aria-label="Email" class="social-link"><i class="fa-solid fa-envelope"></i></a>
-      </div>
+    <!-- Consultoria Matemática -->
+    <div class="service-card">
+      <span class="service-icon">📊</span>
+      <h3>Consultoria Matemática</h3>
+      <p>
+        Modelagem matemática, Métodos Numéricos e Otimização.
+        Aplicação de técnicas estatísticas e computacionais para resolver problemas complexos em negócios e pesquisa.
+      </p>
     </div>
-  </footer>
 
-  <script src="/assets/js/main.js" defer></script>
-</body>
-</html>
+    <!-- Educação Personalizada -->
+    <div class="service-card">
+      <span class="service-icon">📚</span>
+      <h3>Educação Personalizada</h3>
+      <p>
+        Aulas particulares, Mentoria técnica e Treinamento corporativo.
+        Criador do projeto <strong>Matematicaverso</strong>, focado em tornar matemática acessível e aplicável.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="recent-posts">
+  <h2 class="page-heading">Artigos Recentes</h2>
+
+  <ul class="post-list">
+    {%- assign date_format = "%b %-d, %Y" -%}
+    {%- for post in site.posts limit:5 -%}
+    <li>
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+      {%- if post.excerpt -%}
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
