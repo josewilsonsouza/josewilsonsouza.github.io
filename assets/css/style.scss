@@ -505,71 +505,29 @@ body {
 }
 
 /* ================= RESPONSIVO ================= */
-/* ================= RESPONSIVO ================= */
 @media (max-width: 768px) {
-  /* 1. Aumenta a largura útil no celular reduzindo as margens laterais */
-  .wrapper {
-    padding: 0 12px; /* Era 20px, agora o texto vai mais para as bordas */
-  }
-
   .hero-section {
     flex-direction: column-reverse;
     text-align: center;
-    padding: 30px 0; /* Menos espaço em branco no topo */
-    min-height: auto; /* Remove altura mínima forçada no mobile */
-  }
-
-  .hero-content {
-    width: 100%;
+    padding: 40px 0;
   }
 
   .hero-avatar {
-    width: 220px;
-    height: 220px;
-    margin-bottom: 20px;
-    margin-left: auto; /* Centraliza a foto */
-    margin-right: auto;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 30px;
   }
 
-  .hero-title {
-    font-size: 2.2rem; /* Texto um pouco menor para não quebrar palavras */
-  }
-
-  /* 2. Botões empilhados e largura total para facilitar o toque */
   .hero-buttons {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-  }
-
-  .btn {
-    display: block; /* Ocupa a largura disponível */
-    width: 100%;
-    text-align: center;
+    justify-content: center;
   }
   
   .hero-socials {
     justify-content: center;
-    margin-top: 20px;
   }
 
-  /* 3. Ajustes gerais de espaçamento */
-  .section-container {
-    padding: 40px 0;
-  }
-
-  .section-header {
-    margin-bottom: 30px;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  /* 4. Cartões com menos borda interna para caber mais texto */
-  .service-card, 
-  .post-content {
-    padding: 20px; /* Reduzido de 40px/25px para ganhar espaço */
+  .hero-title {
+    font-size: 2.5rem;
   }
 }
 
@@ -792,21 +750,63 @@ html[data-theme="dark"] .MathJax {
 }
 
 /* Responsivo */
-@media screen and (max-width: 768px) {
-  .recent-posts-section {
-    padding: 60px 20px;
+/* ================= RESPONSIVO ================= */
+@media (max-width: 768px) {
+  /* 1. Ajuste Geral */
+  .wrapper {
+    padding: 0 1px; /* Margem padrão para o site */
   }
 
-  .recent-posts-section .section-header {
+  /* 2. Ajuste Específico para Leitura de Posts */
+  /* Isso faz o texto dos posts ir quase até a borda da tela */
+  .post-content, 
+  .post-header {
+    width: 100%;
+    padding: 0; /* Remove preenchimentos extras internos */
+  }
+
+  /* Opcional: Aumentar levemente a fonte no mobile para facilitar leitura */
+  .post-content p, 
+  .post-content li {
+    font-size: 1.05rem; 
+    line-height: 1.5;
+    text-align: left; /* Ou 'justify' se preferir blocos alinhados */
+  }
+
+  /* 3. Ajustes da Home (mantidos da sugestão anterior) */
+  .hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 30px 0;
+    min-height: auto;
+  }
+
+  .hero-content { width: 100%; }
+
+  .hero-avatar {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 20px auto;
+  }
+
+  .hero-title { font-size: 2.2rem; }
+
+  .hero-buttons {
     flex-direction: column;
-    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
   }
 
-  .recent-posts-section .posts-grid {
-    grid-template-columns: 1fr;
+  .btn {
+    display: block;
+    width: 100%;
+  }
+  
+  .hero-socials {
+    justify-content: center;
+    margin-top: 20px;
   }
 
-  .recent-posts-section .post-card h3 {
-    font-size: 1.3rem;
-  }
+  .section-container { padding: 40px 0; }
+  .service-card { padding: 25px; }
 }
