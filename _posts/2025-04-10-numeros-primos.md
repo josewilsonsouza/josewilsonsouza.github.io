@@ -3,6 +3,8 @@ layout: post
 title: "Números Primos: Os Átomos da Matemática"
 date: 2025-04-10
 categories: [teoria-dos-numeros, curiosidades]
+tags: [Matemática, Teoria, Programação]
+emojis: "🔢⚛️💎"
 ---
 
 ## Números Primos: Os Blocos Fundamentais da Aritmética

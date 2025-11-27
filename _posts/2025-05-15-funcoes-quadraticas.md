@@ -3,6 +3,8 @@ layout: post
 title: "Funções Quadráticas: Parábolas e Suas Propriedades"
 date: 2025-05-15
 categories: [algebra, ensino-medio, funcoes]
+tags: [Matemática, Educação, Tutorial]
+emojis: "🖼️🟧"
 ---
 
 ## Funções Quadráticas: Uma Visão Completa

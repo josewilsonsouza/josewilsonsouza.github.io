@@ -3,6 +3,8 @@ layout: post
 title: "O Teorema de Pitágoras: História e Aplicações"
 date: 2025-04-01
 categories: [geometria, ensino-medio]
+tags: [Matemática, Educação, Teoria]
+emojis: "📐🔺△"
 ---
 
 ## O Teorema de Pitágoras

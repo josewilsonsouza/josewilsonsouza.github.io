@@ -3,6 +3,8 @@ layout: post
 title:  "Bem-vindo ao Meu Site de Matemática!"
 date:   2025-03-24 09:59:19 -0300
 categories: geral anúncio
+tags: [Educação, Matemática]
+emojis: "👋🎉📚"
 ---
 
 ## Olá! Seja muito bem-vindo(a)!
