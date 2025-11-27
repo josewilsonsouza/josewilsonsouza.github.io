@@ -505,29 +505,71 @@ body {
 }
 
 /* ================= RESPONSIVO ================= */
+/* ================= RESPONSIVO ================= */
 @media (max-width: 768px) {
+  /* 1. Aumenta a largura útil no celular reduzindo as margens laterais */
+  .wrapper {
+    padding: 0 12px; /* Era 20px, agora o texto vai mais para as bordas */
+  }
+
   .hero-section {
     flex-direction: column-reverse;
     text-align: center;
-    padding: 40px 0;
+    padding: 30px 0; /* Menos espaço em branco no topo */
+    min-height: auto; /* Remove altura mínima forçada no mobile */
+  }
+
+  .hero-content {
+    width: 100%;
   }
 
   .hero-avatar {
-    width: 250px;
-    height: 250px;
-    margin-bottom: 30px;
+    width: 220px;
+    height: 220px;
+    margin-bottom: 20px;
+    margin-left: auto; /* Centraliza a foto */
+    margin-right: auto;
   }
 
+  .hero-title {
+    font-size: 2.2rem; /* Texto um pouco menor para não quebrar palavras */
+  }
+
+  /* 2. Botões empilhados e largura total para facilitar o toque */
   .hero-buttons {
-    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .btn {
+    display: block; /* Ocupa a largura disponível */
+    width: 100%;
+    text-align: center;
   }
   
   .hero-socials {
     justify-content: center;
+    margin-top: 20px;
   }
 
-  .hero-title {
-    font-size: 2.5rem;
+  /* 3. Ajustes gerais de espaçamento */
+  .section-container {
+    padding: 40px 0;
+  }
+
+  .section-header {
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  /* 4. Cartões com menos borda interna para caber mais texto */
+  .service-card, 
+  .post-content {
+    padding: 20px; /* Reduzido de 40px/25px para ganhar espaço */
   }
 }
 
