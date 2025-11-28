@@ -19,7 +19,7 @@ Graduado, com conhecimento em análise financeira, indicadores contábeis, conta
 
 ---
 
-## Experiência Profissional
+## Experiência
 
 ### Pesquisador em Inteligência Artificial
 **INMETRO** (Instituto Nacional de Metrologia, Qualidade e Tecnologia)
@@ -44,16 +44,117 @@ Construação de dashboard para análise de dados de Evasão e Retenção dos es
 
 ## Habilidades Técnicas
 
-### Programação & Data Science
-Python • R • SQL • Git • Linux
-### Machine Learning & IA
-TensorFlow • PyTorch • Scikit-learn • Keras • Federated Learning
-### Ferramentas & Frameworks
-Streamlit • Jupyter • Pandas • NumPy • Matplotlib • Seaborn
-### Matemática Computacional
-SciPy • SymPy • MATLAB • Métodos Numéricos • Otimização
-### Business & Análise
-Excel Avançado • Power BI • Análise Financeira • Contabilidade
+<div class="skills-container">
+  <div class="skill-category">
+    <h3>💻 Programação & Data Science</h3>
+    <div class="skill-tags">
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">R</span>
+      <span class="skill-tag">SQL</span>
+      <span class="skill-tag">Git</span>
+      <span class="skill-tag">Linux</span>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3>🤖 Machine Learning & IA</h3>
+    <div class="skill-tags">
+      <span class="skill-tag">TensorFlow</span>
+      <span class="skill-tag">PyTorch</span>
+      <span class="skill-tag">Scikit-learn</span>
+      <span class="skill-tag">Keras</span>
+      <span class="skill-tag">Federated Learning</span>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3>⚙️ Ferramentas & Frameworks</h3>
+    <div class="skill-tags">
+      <span class="skill-tag">Streamlit</span>
+      <span class="skill-tag">Jupyter</span>
+      <span class="skill-tag">Pandas</span>
+      <span class="skill-tag">NumPy</span>
+      <span class="skill-tag">Matplotlib</span>
+      <span class="skill-tag">Seaborn</span>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3>📐 Matemática Computacional</h3>
+    <div class="skill-tags">
+      <span class="skill-tag">SciPy</span>
+      <span class="skill-tag">SymPy</span>
+      <span class="skill-tag">MATLAB</span>
+      <span class="skill-tag">Métodos Numéricos</span>
+      <span class="skill-tag">Otimização</span>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3>📊 Business & Análise</h3>
+    <div class="skill-tags">
+      <span class="skill-tag">Excel Avançado</span>
+      <span class="skill-tag">Power BI</span>
+      <span class="skill-tag">Análise Financeira</span>
+      <span class="skill-tag">Contabilidade</span>
+    </div>
+  </div>
+</div>
+
+<style>
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.skill-category {
+  background: var(--bg-white);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid var(--border-gray);
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--hover-shadow);
+  border-color: var(--primary-color);
+}
+
+.skill-category h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+  color: var(--primary-color);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+</style>
 
 ---
 

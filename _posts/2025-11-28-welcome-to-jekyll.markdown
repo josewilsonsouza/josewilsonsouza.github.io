@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bem-vindo ao Meu Site!"
-date:   2025-03-24 09:59:19 -0300
+date:   2025-11-28 09:40:19 -0300 # isso permite programar publicação, basta definir uma data e hora para publicação
 categories: geral anúncio
 tags: [Educação, Matemática]
 emojis: "👋🎉📚"

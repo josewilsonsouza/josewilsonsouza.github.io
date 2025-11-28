@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A conjectura de Hilbert-Pólya"
-date: 2025-04-01
+date: 2025-11-28
 categories: [Análise Complexa, Função Zeta, Matemáticos]
 tags: [Matemática, Teoria dos Números, Números Complexos]
 emojis: "♾️🕳️△"
