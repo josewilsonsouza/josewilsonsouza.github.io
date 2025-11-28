@@ -1,0 +1,88 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}",
+  "image": "{{ site.url }}/assets/me_terno.jpg",
+  "email": "{{ site.email }}",
+  "jobTitle": "Estudante & Pesquisador",
+  "description": "{{ site.description | strip_html | strip_newlines }}",
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidade Federal do Rio de Janeiro",
+      "sameAs": "https://ufrj.br"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidade Estadual do Maranhão",
+      "sameAs": "https://www.uema.br"
+    }
+  ],
+  "knowsAbout": [
+    "Matemática Aplicada",
+    "Machine Learning",
+    "Inteligência Artificial",
+    "Aprendizado Federado",
+    "Python",
+    "Ciências Contábeis",
+    "Análise de Dados"
+  ],
+  "sameAs": [
+    "https://github.com/{{ site.github_username }}",
+    "https://www.linkedin.com/in/josé-wilson-b7019515b/"
+  ]
+}
+</script>
+
+{% if page.layout == 'post' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title }}",
+  "description": "{{ page.excerpt | default: page.description | strip_html | strip_newlines | truncatewords: 30 }}",
+  "image": "{{ site.url }}/assets/me_terno.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.title }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/assets/favicon-32x32.png"
+    }
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  }
+}
+</script>
+{% endif %}
+
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description | strip_html | strip_newlines }}",
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ site.title }}"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ site.url }}/posts/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{% endif %}

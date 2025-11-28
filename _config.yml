@@ -28,12 +28,35 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://josewilsonsouza.github.io" # the base hostname & protocol for your site
 github_username: josewilsonsouza
 
+# SEO Settings
+author:
+  name: José Wilson C. Souza
+  email: josewilson@matematica.ufrj.br
+  twitter: # Adicione seu Twitter handle se tiver
+linkedin_username: josé-wilson-b7019515b
+
+# Social
+social:
+  name: José Wilson C. Souza
+  links:
+    - https://github.com/josewilsonsouza
+    - https://www.linkedin.com/in/josé-wilson-b7019515b/
+
+# Google Analytics (opcional - adicione seu ID quando tiver)
+# google_analytics: UA-XXXXXXXX-X
+
+# SEO Tag settings
+lang: pt-BR
+locale: pt_BR
+
 # Build settings
 # theme: minima
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Configuração para renderização de equações LaTeX
 kramdown:

@@ -5,7 +5,7 @@ permalink: /about/
 description: Alguns tópicos sobre mim
 ---
 
-## Olá! Sou José Wilson 👋
+## <img src="/assets/favicon-32x32.png" alt="favicon" style="width: 28px; height: 28px; vertical-align: middle; margin-right: 10px;">Olá! Sou José Wilson 👋
 
 Não consigo não ser multidisciplinar 😊, porque são muitas os processos, do universo, dos humananos e da vida, a serem otimizados/compreedidos/descobertos que necessitam de expertise em **Tecnologia**, **Matemática** e **Ciência** em geral.
 

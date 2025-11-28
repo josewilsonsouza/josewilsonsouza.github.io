@@ -1,0 +1,16 @@
+# robots.txt para josewilsonsouza.github.io
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://josewilsonsouza.github.io/sitemap.xml
+
+# Disallow
+Disallow: /assets/js/
+Disallow: /assets/css/
+Disallow: /_layouts/
+Disallow: /_includes/
+
+# Crawl-delay
+Crawl-delay: 1
