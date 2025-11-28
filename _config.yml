@@ -21,8 +21,9 @@
 title: José Wilson C. Souza
 email: josewilson@matematica.ufrj.br
 description: >- # this means to ignore newlines until "baseurl:"
-  Estudante de Matemática Aplicada na UFRJ. Aqui você encontrará posts sobre
-  matemática, anotações de estudos e recursos educacionais.
+  Olá!👋, sou estudante de Matemática Aplicada na UFRJ, Bacharel em Ciências Contábeis (UEMA) e desenvolvo
+  pesquisas/soluções/aulas em Matemática, Machine Learing, métodos quantitativos e Equações Diferenciais Parciais. Aqui 
+  você encontrará posts sobre matemática, anotações de estudos e recursos educacionais.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://josewilsonsouza.github.io" # the base hostname & protocol for your site
 github_username: josewilsonsouza
