@@ -51,13 +51,63 @@ layout: default
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="bottom"
-        data-theme="preferred_color_scheme"
+        data-theme="light"
         data-lang="pt"
         data-loading="lazy"
         crossorigin="anonymous"
         async>
     </script>
   </div>
+
+  <script>
+    // Sincroniza o tema do Giscus com o tema do site
+    function setGiscusTheme() {
+      const iframe = document.querySelector('iframe.giscus-frame');
+      const theme = document.documentElement.getAttribute('data-theme');
+
+      // Mapeia os temas do site para os temas do Giscus
+      const giscusTheme = theme === 'dark' ? 'dark' : 'light';
+
+      if (iframe) {
+        iframe.contentWindow.postMessage(
+          { giscus: { setConfig: { theme: giscusTheme } } },
+          'https://giscus.app'
+        );
+      }
+    }
+
+    // Aplica o tema inicial quando o Giscus carregar
+    window.addEventListener('message', (event) => {
+      if (event.origin !== 'https://giscus.app') return;
+      if (!(typeof event.data === 'object' && event.data.giscus)) return;
+
+      setGiscusTheme();
+    });
+
+    // Observa mudanças no atributo data-theme
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+          setGiscusTheme();
+        }
+      });
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme']
+    });
+
+    // Define o tema inicial do Giscus
+    document.addEventListener('DOMContentLoaded', () => {
+      const theme = document.documentElement.getAttribute('data-theme') || 'light';
+      const giscusScript = document.querySelector('script[src*="giscus"]');
+
+      if (giscusScript) {
+        giscusScript.setAttribute('data-theme', theme === 'dark' ? 'dark' : 'light');
+      }
+    });
+  </script>
 </article>
 
 <style>
@@ -166,6 +216,10 @@ layout: default
   margin-top: 4rem;
   padding-top: 3rem;
   border-top: 3px solid var(--border-gray);
+  background: var(--bg-white);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
 }
 
 .comments-title {
@@ -173,6 +227,19 @@ layout: default
   font-weight: 700;
   color: var(--text-dark);
   margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Estilização customizada do iframe do Giscus */
+.giscus, .giscus-frame {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Ajustes para harmonizar com o tema do site */
+.comments-section iframe {
+  border: none;
+  background: transparent;
 }
 
 @media screen and (max-width: 768px) {
@@ -187,6 +254,11 @@ layout: default
   .post-meta {
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  .comments-section {
+    padding: 1.5rem;
+    margin-top: 3rem;
   }
 
   .comments-title {
