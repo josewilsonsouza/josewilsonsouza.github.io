@@ -6,7 +6,7 @@ categories: [Teoria dos Números, Função Zeta]
 tags: [Matemática, Teoria dos Números]
 emojis: "🖼️🟧"
 description: O grande problema em aberto da Matemática
-image: /assets/posts/riemann-hypothesis.svg
+image: /assets/posts/riemann-hypothesis.png
 ---
 
 > Como se organiza os primos no mundo dos reais?

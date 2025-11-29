@@ -27,10 +27,8 @@
 
     {% if page.image %}
       <meta property="og:image" content="{{ site.url }}{{ page.image }}">
-    {% elsif page.layout == 'post' %}
-      <meta property="og:image" content="{{ site.url }}/assets/og-default-post.svg">
     {% else %}
-      <meta property="og:image" content="{{ site.url }}/assets/me_terno.jpg">
+      <meta property="og:image" content="{{ site.url }}/assets/og-default-post.png">
     {% endif %}
 
     <meta property="og:image:width" content="1200">
@@ -54,10 +52,8 @@
 
     {% if page.image %}
       <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
-    {% elsif page.layout == 'post' %}
-      <meta name="twitter:image" content="{{ site.url }}/assets/og-default-post.svg">
     {% else %}
-      <meta name="twitter:image" content="{{ site.url }}/assets/me_terno.jpg">
+      <meta name="twitter:image" content="{{ site.url }}/assets/og-default-post.png">
     {% endif %}
 
     <meta name="twitter:image:alt" content="{{ page.title | default: site.title }}">

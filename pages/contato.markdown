@@ -13,6 +13,19 @@ Estou disponível para projetos de consultoria, desenvolvimento e educação nas
 
 ## Serviços Oferecidos
 
+### 🔬 Métodos Quantitativos para Pesquisa Acadêmica
+
+**Consultoria e Aplicação de Métodos Quantitativos**
+- Análise e modelagem matemática para trabalhos acadêmicos
+- Aplicação de técnicas estatísticas avançadas em pesquisas
+- Implementação de simulações computacionais
+- Métodos de otimização para problemas de pesquisa
+- **Material detalhado e relatórios completos** documentando todos os experimentos computacionais e matemáticos
+
+**Aplicações:** Dissertações, teses, artigos científicos, projetos de pesquisa com fundamentação quantitativa rigorosa e documentação reprodutível
+
+---
+
 ### 🤖 Desenvolvimento & Inteligência Artificial
 
 **Consultoria em IA e Machine Learning**
