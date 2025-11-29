@@ -1,0 +1,55 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradiente verde/azul -->
+  <defs>
+    <linearGradient id="grad-hilbert" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Fundo -->
+  <rect width="1200" height="630" fill="url(#grad-hilbert)"/>
+
+  <!-- Elementos decorativos -->
+  <circle cx="120" cy="120" r="90" fill="rgba(255,255,255,0.06)"/>
+  <circle cx="1080" cy="510" r="110" fill="rgba(255,255,255,0.06)"/>
+  <circle cx="900" cy="120" r="65" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="250" cy="480" r="55" fill="rgba(255,255,255,0.05)"/>
+
+  <!-- Grade de fundo simulando matriz -->
+  <line x1="200" y1="150" x2="1000" y2="150" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <line x1="200" y1="250" x2="1000" y2="250" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <line x1="200" y1="350" x2="1000" y2="350" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <line x1="200" y1="450" x2="1000" y2="450" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+  <!-- Título principal -->
+  <text x="600" y="180" font-family="Arial, Helvetica, sans-serif" font-size="60" font-weight="bold" fill="white" text-anchor="middle" filter="url(#glow2)">
+    Conjectura de Hilbert-Pólya
+  </text>
+
+  <!-- Subtítulo -->
+  <text x="600" y="250" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="rgba(255,255,255,0.9)" text-anchor="middle">
+    Conexões entre Teoria dos Números e Física Quântica
+  </text>
+
+  <!-- Operadores matemáticos -->
+  <text x="600" y="360" font-family="Georgia, serif" font-size="52" font-style="italic" fill="rgba(255,255,255,0.95)" text-anchor="middle">
+    ∃ H : H† = H  ∧  spec(H) = zeros(ζ)
+  </text>
+
+  <!-- Emojis -->
+  <text x="600" y="470" font-size="60" text-anchor="middle">♾️ 🔬 △</text>
+
+  <!-- Rodapé -->
+  <text x="600" y="560" font-family="Arial, sans-serif" font-size="24" fill="rgba(255,255,255,0.8)" text-anchor="middle">
+    José Wilson C. Souza • josewilsonsouza.github.io
+  </text>
+</svg>

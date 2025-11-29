@@ -23,17 +23,44 @@
     <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:title" content="{{ page.title | default: site.title }}">
-    <meta property="og:description" content="{{ page.description | default: site.description | strip_html | truncatewords: 30 }}">
-    <meta property="og:image" content="{{ site.url }}/assets/me_terno.jpg">
+    <meta property="og:description" content="{{ page.description | default: page.excerpt | default: site.description | strip_html | truncatewords: 30 }}">
+
+    {% if page.image %}
+      <meta property="og:image" content="{{ site.url }}{{ page.image }}">
+    {% elsif page.layout == 'post' %}
+      <meta property="og:image" content="{{ site.url }}/assets/og-default-post.svg">
+    {% else %}
+      <meta property="og:image" content="{{ site.url }}/assets/me_terno.jpg">
+    {% endif %}
+
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:site_name" content="{{ site.title }}">
+
+    {% if page.layout == 'post' %}
+      <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+      <meta property="article:author" content="{{ site.title }}">
+      {% for tag in page.tags %}
+        <meta property="article:tag" content="{{ tag }}">
+      {% endfor %}
+    {% endif %}
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ page.url | absolute_url }}">
     <meta name="twitter:title" content="{{ page.title | default: site.title }}">
-    <meta name="twitter:description" content="{{ page.description | default: site.description | strip_html | truncatewords: 30 }}">
-    <meta name="twitter:image" content="{{ site.url }}/assets/me_terno.jpg">
+    <meta name="twitter:description" content="{{ page.description | default: page.excerpt | default: site.description | strip_html | truncatewords: 30 }}">
+
+    {% if page.image %}
+      <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+    {% elsif page.layout == 'post' %}
+      <meta name="twitter:image" content="{{ site.url }}/assets/og-default-post.svg">
+    {% else %}
+      <meta name="twitter:image" content="{{ site.url }}/assets/me_terno.jpg">
+    {% endif %}
+
+    <meta name="twitter:image:alt" content="{{ page.title | default: site.title }}">
 
     <!-- Additional Meta -->
     <meta name="theme-color" content="#6366f1">

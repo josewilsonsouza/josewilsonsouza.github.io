@@ -1,0 +1,56 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradiente azul/ciano -->
+  <defs>
+    <linearGradient id="grad-sigma" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c4a6e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0284c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Fundo -->
+  <rect width="1200" height="630" fill="url(#grad-sigma)"/>
+
+  <!-- Elementos decorativos -->
+  <circle cx="140" cy="140" r="95" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="1060" cy="490" r="115" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="920" cy="130" r="68" fill="rgba(255,255,255,0.07)"/>
+  <circle cx="280" cy="510" r="58" fill="rgba(255,255,255,0.06)"/>
+
+  <!-- Gráfico estilizado de otimização -->
+  <path d="M 200 450 Q 400 200, 600 300 T 1000 150" stroke="rgba(255,255,255,0.25)" stroke-width="3" fill="none"/>
+
+  <!-- Pontos no gráfico -->
+  <circle cx="600" cy="300" r="8" fill="#fbbf24"/>
+  <circle cx="1000" cy="150" r="8" fill="#10b981"/>
+
+  <!-- Título principal -->
+  <text x="600" y="200" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle" filter="url(#glow3)">
+    SIGMA
+  </text>
+
+  <!-- Subtítulo -->
+  <text x="600" y="270" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="rgba(255,255,255,0.9)" text-anchor="middle">
+    Otimização e Machine Learning
+  </text>
+
+  <!-- Fórmula -->
+  <text x="600" y="380" font-family="Georgia, serif" font-size="50" font-style="italic" fill="rgba(255,255,255,0.95)" text-anchor="middle">
+    Σ  min f(θ)  s.t.  g(θ) ≤ 0
+  </text>
+
+  <!-- Emojis -->
+  <text x="600" y="480" font-size="60" text-anchor="middle">🔢 ⚛️ 💎</text>
+
+  <!-- Rodapé -->
+  <text x="600" y="560" font-family="Arial, sans-serif" font-size="24" fill="rgba(255,255,255,0.8)" text-anchor="middle">
+    José Wilson C. Souza • josewilsonsouza.github.io
+  </text>
+</svg>

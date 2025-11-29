@@ -5,6 +5,8 @@ date: 2025-11-28
 categories: [Análise Complexa, Função Zeta, Matemáticos]
 tags: [Matemática, Teoria dos Números, Números Complexos]
 emojis: "♾️🕳️△"
+description: Conexões entre Teoria dos Números e Física Quântica
+image: /assets/posts/conjectura-hilbert-polya.svg
 ---
 
 ## Aguarde!!
