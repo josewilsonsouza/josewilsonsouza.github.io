@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "A Hipótese de Riemann"
-date: 2025-11-28
+title: "A Função Zeta e a Hipótese de Riemann"
+date: 2026-01-09
 categories: [Teoria dos Números, Função Zeta]
 tags: [Matemática, Teoria dos Números]
 emojis: "🖼️🟧"
