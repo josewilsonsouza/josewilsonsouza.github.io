@@ -11,6 +11,8 @@ image: /assets/posts/riemann-hypothesis.png
 
 > Como se organiza os primos no mundo dos reais?
 
+<!-- O mundo dos Números Primos tem uma estrutura muito rica e misteriosa, constituíndo um cenário ideal para nos desbravarmos, visitar algumas subestruturas e descobrir padrões intrigantes e estranhos. Vamos chamar esse mundo de Planeta dos Primos,denotado por $\mathbb{P}$.-->
+
 A Hipótese de Riemann permanece como um dos problemas mais profundos e intrigantes da Matemática moderna, desafiando as mentes mais brilhantes há mais de um século e meio. Formulada por Bernhard Riemann em seu célebre artigo de 1859 "Über die Anzahl der Primzahlen unter einer gegebenen Größe" (Sobre o número de primos menores que uma grandeza dada), esta conjectura está intimamente relacionada com a distribuição dos números primos, aqueles elementos fundamentais da aritmética que servem como blocos de construção de todos os números inteiros.
 
 Formalmente, a Hipótese de Riemann afirma que todos os zeros não-triviais $\rho$ da função zeta de Riemann $\zeta(s)$ satisfazem:

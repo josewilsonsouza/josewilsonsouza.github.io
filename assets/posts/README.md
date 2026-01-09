@@ -1,40 +1,38 @@
-# Pasta de Imagens para Preview de Posts
+# Imagens de Preview para Posts
 
-Esta pasta contém as imagens de preview (Open Graph) para os posts do blog.
-
-## 📐 Especificações
-
-- **Dimensões**: 1200 x 630 pixels
+- **Dimensões**: 1200x630 pixels (proporção 1.91:1)
 - **Formato**: JPG ou PNG
-- **Tamanho**: < 300KB (recomendado)
+- **Tamanho máximo**: 5MB (recomendado: < 300KB)
+- **Local**: Pasta `assets/posts/`
 
-## 📝 Nomenclatura
-
-Use nomes descritivos em kebab-case:
-
-- `riemann-hypothesis.jpg`
-- `funcoes-quadraticas.jpg`
-- `conjectura-hilbert-polya.jpg`
-- `aulas-matematica.jpg`
-
-## 🎨 Como Criar
-
-1. Use Canva, Figma ou PowerPoint
-2. Configure para 1200x630px
-3. Adicione:
-   - Título do post
-   - Emoji/ícone relacionado
-   - Gradiente de fundo (cores do site)
-   - Seu nome (discreto)
-
-## ✍️ Como Usar
-
-No front matter do post, adicione:
+No front matter de cada post, adicione o campo `image:`:
 
 ```yaml
-image: /assets/posts/nome-da-imagem.jpg
+---
+layout: post
+title: "A Função Zeta e a Hipótese de Riemann"
+date: 2026-01-09
+categories: [Teoria dos Números, Função Zeta]
+tags: [Matemática, Teoria dos Números]
+emojis: "🖼️🟧"
+description: O grande problema em aberto da Matemática
+image: /assets/posts/riemann-hypothesis.jpg
+---
 ```
 
-## 📚 Leia o Guia Completo
+## ⚠️ Importante
 
-Consulte `/GUIA-IMAGENS-PREVIEW.md` para instruções detalhadas.
+- Se você **não adicionar** o campo `image:`, o post usará a imagem padrão `og-default-post.jpg`
+- Páginas institucionais (About, Portfolio, Contato) continuam usando `me_terno.jpg`
+- Sempre use URLs absolutas começando com `/assets/`
+- Após fazer upload de novas imagens, pode levar alguns minutos para o preview atualizar
+
+## Cores do Site
+
+Para manter consistência visual:
+
+- **Primary**: `#6366f1` (Roxo/Azul)
+- **Secondary**: `#8b5cf6` (Roxo claro)
+- **Accent**: `#ec4899` (Rosa)
+- **Success**: `#10b981` (Verde)
+- **Warning**: `#f59e0b` (Laranja)

@@ -5,11 +5,7 @@ permalink: /contato/
 description: Serviços e Contato
 ---
 
-## Vamos Trabalhar Juntos?
-
-Estou disponível para projetos de consultoria, desenvolvimento e educação nas áreas de **Inteligência Artificial**, **Matemática Aplicada** e **Data Science**.
-
----
+Estou disponível para projetos de consultoria, desenvolvimento e educação nas áreas de **Inteligência Artificial**, **Matemática Aplicada**, **Data Science** e **Metodos Quantitativos para Pesquisas Acadêmicas**
 
 ## Serviços Oferecidos
 
@@ -59,14 +55,13 @@ Estou disponível para projetos de consultoria, desenvolvimento e educação nas
 - Preparação para Vestibulares e ENEM
 - Concursos Públicos (Matemática e Raciocínio Lógico)
 
----
 
 ## Formas de Contato
 
 ### Email
 📧 **[josewilson@matematica.ufrj.br](mailto:josewilson@matematica.ufrj.br)**
 
-### WhatsApp / Telefone
+### WhatsApp
 📱 **(21) 98307-2973**
 
 ### GitHub
