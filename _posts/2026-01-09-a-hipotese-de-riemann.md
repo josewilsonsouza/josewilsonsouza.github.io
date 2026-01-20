@@ -20,23 +20,31 @@ Imagine que estamos interessados em saber o que acontece quando somamos numeros 
 $$
 S_\infty = \sum_{n=1}^{\infty} n = 1 + 2 + 3 + 4 + \cdots
 $$
+
 Isso claramente (naturalmente claro), dá infinito. Vamos reorganizar isso e deixar na forma
+
 $$
 S_N = \sum_{n=1}^N n = 1 + 2 + 3 + \cdots + N
 $$
+
 Quando quisermos soma até o infinito apenas dizermos $S_\infty = \lim_{N \to \infty} S_N$. Logo, se lembrarmos alguma coisa de Progressão Aritimética, chegamos
+
 $$
 S_N = \frac{N(N+1)}{2}
 $$
+
 Podemos continuar nos perguntando, agora para essa série
 
 $$
 S_N = \sum_{n=1}^{\infty} n^2 = 1^2 + 2^2 + 3^2 + \cdots + N^2
 $$
+
 Resposta:
+
 $$
 S_N = \frac{N(N+1)(2N+1)}{6}
 $$
+
 Em geral já podemos ver que para qualquer série da forma
 
 $$
@@ -49,12 +57,13 @@ $$
 \sum_{n=1}^{N} n^k = \frac{1}{k+1} \sum_{j=0}^{k} \binom{k+1}{j} B_j N^{k+1-j}
 $$
 
-A pergunta mais séria se torna
+Onde $B_j$ é o $j$-ésimo [Número de Bernoulli](https://en.wikipedia.org/wiki/Bernoulli_number). Agora, nos parece interssante olhar para o que acontece se $k$ for negativo, ou seja:
+
 $$
-\zeta_N (k) = \sum_{n=1}^{N} \frac{1}{n^k} = \frac{1}{1^k} + \frac{1}{2^k} + \frac{1}{3^k} + \cdots + \frac{1}{N^k}
+\zeta_N (s) = \lim_{N \to \infty} \sum_{n=1}^{N} \frac{1}{n^s} = \frac{1}{1^s} + \frac{1}{2^s} + \frac{1}{3^s} + \cdots,\quad s\in \mathbb{R}.
 $$
 
-
+Essa é a Função Zeta, definida inicialmente nos reais. Euler resolveu o caso $s=2$, conhecido como [Problema de Basileia](https://en.wikipedia.org/wiki/Basel_problem). Riemann foi além, ele estudou o caso geral $s\in \mathbb{C}$, o que resultou em uma nova formulação da função $\zeta(s)$ acima, com uma nova cara, e que deu inicio à famosa Hipótese de Riemann.
 
 <!--A Hipótese de Riemann permanece como um dos problemas mais profundos e intrigantes da Matemática, desafiando as mentes mais brilhantes há mais de um século e meio. Formulada por Bernhard Riemann em seu célebre artigo de 1859 "Über die Anzahl der Primzahlen unter einer gegebenen Größe" (Sobre o número de primos menores que uma grandeza dada), esta conjectura está intimamente relacionada com a distribuição dos números primos, aqueles elementos fundamentais da aritmética que servem como blocos de construção de todos os números inteiros.
 
